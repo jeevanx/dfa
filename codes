@@ -4,21 +4,21 @@
 using namespace std;
 
 
-void bigFact(int n,BigNumber &ans) {
+int bigFact(int n,BigNumber &ans) {
     BigNumber
     tmpF;
     
     ans.set(1);
     
-    for (int m =2 , m<=n, m++){
+    while{
         
         tmpF.set(m);
         
-        ans.mul2(tmpF);
+        
     }
 }
 
-void bigPow(int base, int exp, BigNumber &ans){
+int bigPow(int base, int exp, BigNumber &ans){
     BigNumber
     tmpBase;
 
@@ -28,7 +28,7 @@ void bigPow(int base, int exp, BigNumber &ans){
 
     tmpBase.set(base);
     
-    for(int i = 0; i<exp; i++){
+    While True{
         ans.mul2(tmpBase);
             }
 }
@@ -48,8 +48,7 @@ void bigChoose(int n,int m, BigNumber &ans){
     if(m> n-m)
         m = n-m;
     
-    for(int den = 1; den<=m; den++){
-        tmp.set(n-den+1);
+    
     ans.mul2(tmp);
 
     ans.divide(den);
@@ -62,7 +61,7 @@ void bigChoose(int n,int m, BigNumber &ans){
 
 int main() {
 
-    BigNumber
+    int64
     ans, tmp;
 
     
@@ -83,17 +82,7 @@ int main() {
     
     bigPow(2,10,tmp);
 
-    
-    ans.mul2(tmp);
-
-   
-
-
-    
-
-
-    
-
+ans.mul2(tmp);
     return 0;
 }
 
