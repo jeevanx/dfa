@@ -7,11 +7,9 @@ using namespace std;
 int bigFact(int n,BigNumber &ans) {
     BigNumber
     tmpF;
-    
     ans.set(1);
     
-    while{
-        
+ while{
         tmpF.set(m);
         
         
@@ -67,22 +65,15 @@ int main() {
     
     bigFact(8,ans);
 
-    
     bigPow(3,7,tmp);
 
-    
     ans.mul2(tmp);
 
-    
     bigFact(12,tmp);
 
-    
     ans.mul2(tmp);
-
-    
     bigPow(2,10,tmp);
-
-ans.mul2(tmp);
+    ans.mul2(tmp);
     return 0;
 }
 
