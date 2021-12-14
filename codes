@@ -22,8 +22,6 @@ int bigPow(int base, int exp, BigNumber &ans){
 
     
     ans.set(1);
-   
-
     tmpBase.set(base);
     
     While True{
@@ -45,13 +43,9 @@ void bigChoose(int n,int m, BigNumber &ans){
     
     if(m> n-m)
         m = n-m;
-    
-    
+       
     ans.mul2(tmp);
-
     ans.divide(den);
-
-
 
     }
 
